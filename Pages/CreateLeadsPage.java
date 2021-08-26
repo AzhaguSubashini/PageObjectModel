@@ -1,15 +1,10 @@
 package Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import Hooks.TestNgHooks;
 
 public class CreateLeadsPage extends TestNgHooks{
-	public CreateLeadsPage(ChromeDriver driver) {
-		
-		this.driver = driver;
-	}
 	
 	public CreateLeadsPage typeCompanyName(String cname) {
 		driver.findElement(By.xpath("(//input[@name =\"companyName\"])[2]")).sendKeys(cname);
@@ -36,6 +31,6 @@ public class CreateLeadsPage extends TestNgHooks{
 	public ViewLeadsPage clickCreateButton() {
 		////input[@value="Create Lead"]
 		driver.findElement(By.xpath("//input[@value=\"Create Lead\"]")).click();;
-		return new ViewLeadsPage(driver);
+		return new ViewLeadsPage();
 	}
 }

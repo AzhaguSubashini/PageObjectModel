@@ -10,7 +10,7 @@ public class TC001_LoginLogout extends TestNgHooks {
 	@Test
 	public void loginlogout() {
 		
-		new LoginPage(driver)
+		new LoginPage()
 		.typeUsername("demosalesmanager")
 		.typePassword("crmsfa")
 		.clickLoginbutton()

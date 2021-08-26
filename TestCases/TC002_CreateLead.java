@@ -1,6 +1,5 @@
 package TestCases;
 
-
 import org.testng.annotations.Test;
 
 import Hooks.TestNgHooks;
@@ -10,7 +9,7 @@ public class TC002_CreateLead extends TestNgHooks{
 
 	@Test
 	public void createLead() {
-		new LoginPage(driver)
+		new LoginPage()
 		.typeUsername("demosalesmanager")
 		.typePassword("crmsfa")
 		.clickLoginbutton()
